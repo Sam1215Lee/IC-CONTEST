@@ -1,0 +1,89 @@
+ncsim 15.20-s039
+Linux 2.6.18-371.4.1.el5 #1 SMP Thu Jan 30 06:08:24 EST 2014 x86_64
+CPU cores: 8
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		10240 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		1024
+memorylocked	32 kbytes
+maxproc			128300
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+HOSTNAME=Jolin
+TERM=linux
+SHELL=/bin/bash
+HISTSIZE=1000
+SSH_CLIENT=192.168.101.41 56561 22
+SSH_TTY=/dev/pts/2
+USER=ic_contest
+LS_COLORS=no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:
+MAIL=/var/spool/mail/ic_contest
+PATH=/usr/bin/X11:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/cadence/CONFRML/cur/./bin:/usr/cad/cadence/CONFRML/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/cad/spring_soft/verdi/cur/bin:/usr/cad/spring_soft/verdi/cur/nLint/bin:/usr/cad/mentor/modelsim/cur/modeltech/linux:/usr/cad/mentor/calibre/cur/bin:/usr/cad/synopsys/vcs/cur/bin:/usr/cad/synopsys/vcs/cur/linux/bin:/usr/cad/synopsys/vcs/cur/linux/util:/usr/cad/synopsys/vcs/cur/linux/flexlm:/usr/cad/synopsys/star-rcxt/cur/bin:/usr/cad/synopsys/tmax/cur/bin:/usr/cad/synopsys/formality/cur/bin:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/cad/synopsys/icc/cur/amd64/syn/bin:/usr/bin/X11:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/ic_contest/bin
+INPUTRC=/etc/inputrc
+PWD=/home/ic_contest/E14091067/2022
+LANG=zh_TW.UTF-8
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SHLVL=2
+HOME=/home/ic_contest
+LOGNAME=ic_contest
+SSH_CONNECTION=192.168.101.41 56561 140.116.245.89 22
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+DISPLAY=localhost:11.0
+G_BROKEN_FILENAMES=1
+_=/bin/csh
+OLDPWD=/home/ic_contest/E14091067
+HOSTTYPE=x86_64-linux
+VENDOR=unknown
+OSTYPE=linux
+MACHTYPE=x86_64
+GROUP=ic_contest
+HOST=Jolin
+REMOTEHOST=192.168.101.41
+LD_LIBRARY_PATH=:/usr/cad/cadence/CONFRML/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib
+LM_LICENSE_FILE=26585@lstn:5280@lstn:5229@lsncku:5219@lsncku:26585@lsncku:1717@lsncku:
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SYNOPSYS=/usr/cad/synopsys/synthesis/cur
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+MANPATH=/usr/cad/synopsys/synthesis/cur/doc/syn/man:/usr/cad/synopsys/synthesis/cur/doc/syn/man
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+FORMALITY=/usr/cad/synopsys/formality/cur
+SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
+VCS_HOME=/usr/cad/synopsys/vcs/cur
+VCS_CC=gcc
+MGC_HOME=/usr/cad/mentor/modelsim/cur/modeltech/linux
+MGC_TMPDIR=/tmp
+MGC_LOCATION_MAP=NO_MAP
+SHLIB_PATH=/usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX
+USE_PIPE=1
+VERPLEX_HOME=/usr/cad/cadence/CONFRML/cur
+_IRUNROOT_=/usr/cad/cadence/INCISIV/cur/tools
+CDS_ARCH=lnx86
+NCRUNMODE=ncverilog:./INCA_libs/irun.lnx86.15.20.nc
+IRUNBATCH=FALSE
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=ncverilog
+argv[1]=tb.sv
+argv[2]=JAM_syn.v
+argv[3]=-v
+argv[4]=tsmc13_neg.v
+argv[5]=+define+SDF
+79 profile - 100
+          CPU/Mem usage: 0.040 sys,  0.040 user,  59.76M sys,  0.00M vm
+80 VC callback profile - scalar:0 vector:0
+81 Sat Mar 11 14:51:01 2023
+82 pliAppInit
+83 *Verdi3* : Enable Parallel Dumping.
+84 pliAppMiscSet: New Sim Round
+85 pliEntryInit
+86 LIBSSCORE=found /usr/cad/spring_soft/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
+87 Sim process exit

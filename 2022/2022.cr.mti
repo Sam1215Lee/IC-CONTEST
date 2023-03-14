@@ -1,0 +1,8 @@
+{C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v} {1 {vlog -work work -novopt -stats=none {C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module JAM
+
+Top level modules:
+	JAM
+
+} {} {}}

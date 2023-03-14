@@ -1,0 +1,306 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Mar 11, 2023 at 14:51:00 CST
+ncverilog
+	tb.sv
+	JAM_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+Recompiling... reason: file './tb.sv' is newer than expected.
+	expected: Sat Mar 11 14:47:30 2023
+	actual:   Sat Mar 11 14:50:59 2023
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  JAM_DW01_add_0 add_159 ( .A(sum), .B({1'b0, 1'b0, 1'b0, Cost}), .CI(1'b0), 
+                       |
+ncelab: *W,CUVWSP (./JAM_syn.v,121|23): 1 output port was not connected:
+ncelab: (./JAM_syn.v,2): CO
+
+  JAM_DW01_add_1 add_86 ( .A({MinCost[9], n553, n554, n555, MinCost[5:3], n559, 
+                      |
+ncelab: *W,CUVWSP (./JAM_syn.v,123|22): 1 output port was not connected:
+ncelab: (./JAM_syn.v,32): CO
+
+  DFFRX1 cnt_reg ( .D(n391), .CK(CLK), .RN(n444), .QN(n309) );
+               |
+ncelab: *W,CUVWSP (./JAM_syn.v,133|15): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \cur_reg[1]  ( .D(next[1]), .CK(CLK), .RN(n444), .QN(n316) );
+                    |
+ncelab: *W,CUVWSP (./JAM_syn.v,191|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \MatchCount_reg[2]  ( .D(n340), .CK(CLK), .RN(n446), .QN(n330) );
+                           |
+ncelab: *W,CUVWSP (./JAM_syn.v,213|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \MatchCount_reg[0]  ( .D(n342), .CK(CLK), .RN(n446), .QN(n295) );
+                           |
+ncelab: *W,CUVWSP (./JAM_syn.v,218|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFSX1 \W_reg[2]  ( .D(n394), .CK(CLK), .SN(n498), .QN(n313) );
+                  |
+ncelab: *W,CUVWSP (./JAM_syn.v,235|18): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18583): Q
+
+  DFFRX1 \MinCost_reg[8]  ( .D(n488), .CK(CLK), .RN(n445), .Q(n553) );
+                        |
+ncelab: *W,CUVWSP (./JAM_syn.v,236|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \MinCost_reg[9]  ( .D(n487), .CK(CLK), .RN(n445), .QN(n401) );
+                        |
+ncelab: *W,CUVWSP (./JAM_syn.v,237|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "./JAM_syn.sdf"
+        .MinCost(MinCost),
+                       |
+ncelab: *W,CUVMPW (./tb.sv,40|23): port sizes differ in port connection (9/10).
+	Annotating SDF timing data:
+		Compiled SDF file:     JAM_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_JAM
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U689 of module MXI4X1 <./JAM_syn.sdf, line 1742>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U689 of module MXI4X1 <./JAM_syn.sdf, line 1743>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U689 of module MXI4X1 <./JAM_syn.sdf, line 1748>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U689 of module MXI4X1 <./JAM_syn.sdf, line 1749>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U688 of module MXI4X1 <./JAM_syn.sdf, line 1766>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U688 of module MXI4X1 <./JAM_syn.sdf, line 1767>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U688 of module MXI4X1 <./JAM_syn.sdf, line 1772>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U688 of module MXI4X1 <./JAM_syn.sdf, line 1773>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U687 of module MXI2X1 <./JAM_syn.sdf, line 1786>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U687 of module MXI2X1 <./JAM_syn.sdf, line 1787>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U685 of module MXI4X1 <./JAM_syn.sdf, line 1814>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U685 of module MXI4X1 <./JAM_syn.sdf, line 1815>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U685 of module MXI4X1 <./JAM_syn.sdf, line 1820>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U685 of module MXI4X1 <./JAM_syn.sdf, line 1821>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U684 of module MXI4X1 <./JAM_syn.sdf, line 1838>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U684 of module MXI4X1 <./JAM_syn.sdf, line 1839>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U684 of module MXI4X1 <./JAM_syn.sdf, line 1844>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U684 of module MXI4X1 <./JAM_syn.sdf, line 1845>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U683 of module MXI2X1 <./JAM_syn.sdf, line 1858>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U683 of module MXI2X1 <./JAM_syn.sdf, line 1859>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U681 of module MXI4X1 <./JAM_syn.sdf, line 1886>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U681 of module MXI4X1 <./JAM_syn.sdf, line 1887>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U681 of module MXI4X1 <./JAM_syn.sdf, line 1892>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U681 of module MXI4X1 <./JAM_syn.sdf, line 1893>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U680 of module MXI4X1 <./JAM_syn.sdf, line 1910>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U680 of module MXI4X1 <./JAM_syn.sdf, line 1911>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U680 of module MXI4X1 <./JAM_syn.sdf, line 1916>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U680 of module MXI4X1 <./JAM_syn.sdf, line 1917>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U679 of module MXI2X1 <./JAM_syn.sdf, line 1930>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U679 of module MXI2X1 <./JAM_syn.sdf, line 1931>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U665 of module MXI4X1 <./JAM_syn.sdf, line 2095>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U665 of module MXI4X1 <./JAM_syn.sdf, line 2096>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U665 of module MXI4X1 <./JAM_syn.sdf, line 2101>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U665 of module MXI4X1 <./JAM_syn.sdf, line 2102>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U664 of module MXI4X1 <./JAM_syn.sdf, line 2119>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U664 of module MXI4X1 <./JAM_syn.sdf, line 2120>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U664 of module MXI4X1 <./JAM_syn.sdf, line 2125>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U664 of module MXI4X1 <./JAM_syn.sdf, line 2126>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U663 of module MXI2X1 <./JAM_syn.sdf, line 2139>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U663 of module MXI2X1 <./JAM_syn.sdf, line 2140>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U591 of module MXI4X1 <./JAM_syn.sdf, line 3026>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U591 of module MXI4X1 <./JAM_syn.sdf, line 3027>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U591 of module MXI4X1 <./JAM_syn.sdf, line 3032>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U591 of module MXI4X1 <./JAM_syn.sdf, line 3033>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U590 of module MXI4X1 <./JAM_syn.sdf, line 3050>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U590 of module MXI4X1 <./JAM_syn.sdf, line 3051>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U590 of module MXI4X1 <./JAM_syn.sdf, line 3056>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U590 of module MXI4X1 <./JAM_syn.sdf, line 3057>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U575 of module MX4X1 <./JAM_syn.sdf, line 3239>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U575 of module MX4X1 <./JAM_syn.sdf, line 3240>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U575 of module MX4X1 <./JAM_syn.sdf, line 3245>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U575 of module MX4X1 <./JAM_syn.sdf, line 3246>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U574 of module MX4X1 <./JAM_syn.sdf, line 3263>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U574 of module MX4X1 <./JAM_syn.sdf, line 3264>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U574 of module MX4X1 <./JAM_syn.sdf, line 3269>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U574 of module MX4X1 <./JAM_syn.sdf, line 3270>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U573 of module CLKMX2X2 <./JAM_syn.sdf, line 3283>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U573 of module CLKMX2X2 <./JAM_syn.sdf, line 3284>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.u_JAM.U572 of module XNOR2X1 <./JAM_syn.sdf, line 3295>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.u_JAM.U572 of module XNOR2X1 <./JAM_syn.sdf, line 3296>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_JAM.U572 of module XNOR2X1 <./JAM_syn.sdf, line 3299>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_JAM.U572 of module XNOR2X1 <./JAM_syn.sdf, line 3300>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U570 of module MX4X1 <./JAM_syn.sdf, line 3329>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U570 of module MX4X1 <./JAM_syn.sdf, line 3330>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U570 of module MX4X1 <./JAM_syn.sdf, line 3335>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U570 of module MX4X1 <./JAM_syn.sdf, line 3336>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U569 of module MX4X1 <./JAM_syn.sdf, line 3353>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U569 of module MX4X1 <./JAM_syn.sdf, line 3354>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U569 of module MX4X1 <./JAM_syn.sdf, line 3359>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U569 of module MX4X1 <./JAM_syn.sdf, line 3360>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U568 of module CLKMX2X2 <./JAM_syn.sdf, line 3373>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U568 of module CLKMX2X2 <./JAM_syn.sdf, line 3374>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U567 of module MX4X1 <./JAM_syn.sdf, line 3391>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U567 of module MX4X1 <./JAM_syn.sdf, line 3392>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U567 of module MX4X1 <./JAM_syn.sdf, line 3397>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U567 of module MX4X1 <./JAM_syn.sdf, line 3398>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U566 of module MX4X1 <./JAM_syn.sdf, line 3415>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U566 of module MX4X1 <./JAM_syn.sdf, line 3416>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U566 of module MX4X1 <./JAM_syn.sdf, line 3421>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U566 of module MX4X1 <./JAM_syn.sdf, line 3422>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U565 of module CLKMX2X2 <./JAM_syn.sdf, line 3435>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U565 of module CLKMX2X2 <./JAM_syn.sdf, line 3436>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U547 of module MX4X1 <./JAM_syn.sdf, line 3653>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U547 of module MX4X1 <./JAM_syn.sdf, line 3654>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U547 of module MX4X1 <./JAM_syn.sdf, line 3659>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U547 of module MX4X1 <./JAM_syn.sdf, line 3660>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U546 of module MX4X1 <./JAM_syn.sdf, line 3677>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U546 of module MX4X1 <./JAM_syn.sdf, line 3678>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S1) Y) of instance testfixture.u_JAM.U546 of module MX4X1 <./JAM_syn.sdf, line 3683>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S1) Y) of instance testfixture.u_JAM.U546 of module MX4X1 <./JAM_syn.sdf, line 3684>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U545 of module CLKMX2X2 <./JAM_syn.sdf, line 3697>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U545 of module CLKMX2X2 <./JAM_syn.sdf, line 3698>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.u_JAM.U535 of module XOR2XL <./JAM_syn.sdf, line 3809>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.u_JAM.U535 of module XOR2XL <./JAM_syn.sdf, line 3810>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_JAM.U535 of module XOR2XL <./JAM_syn.sdf, line 3813>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_JAM.U535 of module XOR2XL <./JAM_syn.sdf, line 3814>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge S0) Y) of instance testfixture.u_JAM.U327 of module CLKMX2X2 <./JAM_syn.sdf, line 6002>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge S0) Y) of instance testfixture.u_JAM.U327 of module CLKMX2X2 <./JAM_syn.sdf, line 6003>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.u_JAM.add_86.U7 of module XOR2XL <./JAM_syn.sdf, line 7643>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.u_JAM.add_86.U7 of module XOR2XL <./JAM_syn.sdf, line 7644>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_JAM.add_86.U7 of module XOR2XL <./JAM_syn.sdf, line 7647>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_JAM.add_86.U7 of module XOR2XL <./JAM_syn.sdf, line 7648>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_JAM.add_86.U6 of module XOR2XL <./JAM_syn.sdf, line 7662>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_JAM.add_86.U6 of module XOR2XL <./JAM_syn.sdf, line 7663>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.u_JAM.add_86.U2 of module XOR2X1 <./JAM_syn.sdf, line 7704>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.u_JAM.add_86.U2 of module XOR2X1 <./JAM_syn.sdf, line 7705>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_JAM.add_86.U2 of module XOR2X1 <./JAM_syn.sdf, line 7708>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_JAM.add_86.U2 of module XOR2X1 <./JAM_syn.sdf, line 7709>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.u_JAM.add_86.U1 of module XOR2X1 <./JAM_syn.sdf, line 7720>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.u_JAM.add_86.U1 of module XOR2X1 <./JAM_syn.sdf, line 7721>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_JAM.add_86.U1 of module XOR2X1 <./JAM_syn.sdf, line 7724>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_JAM.add_86.U1 of module XOR2X1 <./JAM_syn.sdf, line 7725>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_86.U1_6 of module ADDFX2 <./JAM_syn.sdf, line 7745>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_86.U1_6 of module ADDFX2 <./JAM_syn.sdf, line 7746>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_86.U1_6 of module ADDFX2 <./JAM_syn.sdf, line 7754>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_86.U1_6 of module ADDFX2 <./JAM_syn.sdf, line 7755>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_86.U1_1 of module ADDFXL <./JAM_syn.sdf, line 7775>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_86.U1_1 of module ADDFXL <./JAM_syn.sdf, line 7776>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_86.U1_1 of module ADDFXL <./JAM_syn.sdf, line 7784>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_86.U1_1 of module ADDFXL <./JAM_syn.sdf, line 7785>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_86.U1_2 of module ADDFXL <./JAM_syn.sdf, line 7805>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_86.U1_2 of module ADDFXL <./JAM_syn.sdf, line 7806>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_86.U1_2 of module ADDFXL <./JAM_syn.sdf, line 7814>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_86.U1_2 of module ADDFXL <./JAM_syn.sdf, line 7815>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_86.U1_3 of module ADDFXL <./JAM_syn.sdf, line 7835>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_86.U1_3 of module ADDFXL <./JAM_syn.sdf, line 7836>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_86.U1_3 of module ADDFXL <./JAM_syn.sdf, line 7844>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_86.U1_3 of module ADDFXL <./JAM_syn.sdf, line 7845>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_86.U1_4 of module ADDFXL <./JAM_syn.sdf, line 7865>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_86.U1_4 of module ADDFXL <./JAM_syn.sdf, line 7866>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_86.U1_4 of module ADDFXL <./JAM_syn.sdf, line 7874>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_86.U1_4 of module ADDFXL <./JAM_syn.sdf, line 7875>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_86.U1_5 of module ADDFXL <./JAM_syn.sdf, line 7895>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_86.U1_5 of module ADDFXL <./JAM_syn.sdf, line 7896>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_86.U1_5 of module ADDFXL <./JAM_syn.sdf, line 7904>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_86.U1_5 of module ADDFXL <./JAM_syn.sdf, line 7905>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.u_JAM.add_159.U7 of module XOR2X1 <./JAM_syn.sdf, line 7916>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.u_JAM.add_159.U7 of module XOR2X1 <./JAM_syn.sdf, line 7917>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_JAM.add_159.U7 of module XOR2X1 <./JAM_syn.sdf, line 7920>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_JAM.add_159.U7 of module XOR2X1 <./JAM_syn.sdf, line 7921>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_JAM.add_159.U5 of module XOR2XL <./JAM_syn.sdf, line 7945>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_JAM.add_159.U5 of module XOR2XL <./JAM_syn.sdf, line 7946>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.u_JAM.add_159.U4 of module XNOR2X1 <./JAM_syn.sdf, line 7957>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.u_JAM.add_159.U4 of module XNOR2X1 <./JAM_syn.sdf, line 7958>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_JAM.add_159.U4 of module XNOR2X1 <./JAM_syn.sdf, line 7961>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_JAM.add_159.U4 of module XNOR2X1 <./JAM_syn.sdf, line 7962>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) Y) of instance testfixture.u_JAM.add_159.U3 of module XOR2XL <./JAM_syn.sdf, line 7973>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) Y) of instance testfixture.u_JAM.add_159.U3 of module XOR2XL <./JAM_syn.sdf, line 7974>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge B) Y) of instance testfixture.u_JAM.add_159.U3 of module XOR2XL <./JAM_syn.sdf, line 7977>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge B) Y) of instance testfixture.u_JAM.add_159.U3 of module XOR2XL <./JAM_syn.sdf, line 7978>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_159.U1_4 of module ADDFXL <./JAM_syn.sdf, line 8018>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_159.U1_4 of module ADDFXL <./JAM_syn.sdf, line 8019>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_159.U1_4 of module ADDFXL <./JAM_syn.sdf, line 8027>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_159.U1_4 of module ADDFXL <./JAM_syn.sdf, line 8028>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_159.U1_5 of module ADDFXL <./JAM_syn.sdf, line 8048>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_159.U1_5 of module ADDFXL <./JAM_syn.sdf, line 8049>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_159.U1_5 of module ADDFXL <./JAM_syn.sdf, line 8057>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_159.U1_5 of module ADDFXL <./JAM_syn.sdf, line 8058>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_159.U1_6 of module ADDFXL <./JAM_syn.sdf, line 8078>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_159.U1_6 of module ADDFXL <./JAM_syn.sdf, line 8079>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_159.U1_6 of module ADDFXL <./JAM_syn.sdf, line 8087>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_159.U1_6 of module ADDFXL <./JAM_syn.sdf, line 8088>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_159.U1_1 of module ADDFXL <./JAM_syn.sdf, line 8108>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_159.U1_1 of module ADDFXL <./JAM_syn.sdf, line 8109>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_159.U1_1 of module ADDFXL <./JAM_syn.sdf, line 8117>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_159.U1_1 of module ADDFXL <./JAM_syn.sdf, line 8118>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_159.U1_2 of module ADDFXL <./JAM_syn.sdf, line 8138>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_159.U1_2 of module ADDFXL <./JAM_syn.sdf, line 8139>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_159.U1_2 of module ADDFXL <./JAM_syn.sdf, line 8147>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_159.U1_2 of module ADDFXL <./JAM_syn.sdf, line 8148>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge A) S) of instance testfixture.u_JAM.add_159.U1_3 of module ADDFXL <./JAM_syn.sdf, line 8168>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge A) S) of instance testfixture.u_JAM.add_159.U1_3 of module ADDFXL <./JAM_syn.sdf, line 8169>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CI) S) of instance testfixture.u_JAM.add_159.U1_3 of module ADDFXL <./JAM_syn.sdf, line 8177>.
+ncelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (negedge CI) S) of instance testfixture.u_JAM.add_159.U1_3 of module ADDFXL <./JAM_syn.sdf, line 8178>.
+	Annotation completed with 0 Errors and 174 Warnings
+	SDF statistics: No. of Pathdelays = 1823  Annotated = 100.00% -- No. of Tchecks = 404  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        1823	        1823	      100.00
+		      $width	         202	         202	      100.00
+		  $setuphold	         202	         202	      100.00
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  489      85
+		UDPs:                      99       3
+		Primitives:              1132       8
+		Timing outputs:           550      34
+		Registers:                 98      35
+		Scalar wires:             629       -
+		Expanded wires:             7       1
+		Vectored wires:             1       -
+		Always blocks:              3       3
+		Initial blocks:             7       7
+		Cont. assignments:          1       1
+		Pseudo assignments:         1       1
+		Timing checks:            606      91
+		Interconnect:            1496       -
+		Delayed tcheck signals:   202      77
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi3* Loading libsscore_ius152.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+*******************************
+** Simulation Start          **
+*******************************
+PATTERN:   1
+-------------- Cost Table --------------
+Jobs       0   1   2   3   4   5   6   7
+worker0:  11  25  53  41  59  32  25  59
+worker1:   4  11  25  11  59  31  53  11
+worker2:  11  59  15  11  15  15  53  53
+worker3:   4  59  32  34  53  41  34  59
+worker4:  15  32  41  34   4  59  34  32
+worker5:  41  59  59   4   4  41  34  34
+worker6:  53  31  25  41  59  32  31  53
+worker7:  11  31  25  11  34  34  53  32
+cycle:    2097152, still running...
+cycle:    4194304, still running...
+cycle:    6291456, still running...
+cycle:    8388608, still running...
+********************************************************************
+**  Failed waiting Valid signal, Simulation STOP at cycle   10000001 **
+**  If needed, You can increase End_CYCLE value in tp.v           **
+********************************************************************
+Simulation complete via $finish(1) at time 100000005 NS + 0
+./tb.sv:79         $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 11, 2023 at 14:51:33 CST  (total: 00:00:33)

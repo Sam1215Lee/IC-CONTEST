@@ -1,0 +1,932 @@
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui +notimingchecks work.testfixture
+# vsim -gui 
+# Start time: 13:11:27 on Mar 10,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+add wave -position insertpoint sim:/testfixture/u_JAM/*
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    563650
+# receive MinCost/MatchCount=   0/ 0 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 5636495 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+add wave -position insertpoint  \
+sim:/testfixture/u_JAM/buff
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+add wave -position insertpoint sim:/testfixture/u_JAM/*
+add wave -position insertpoint  \
+sim:/testfixture/u_JAM/buff
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    563650
+# receive MinCost/MatchCount=   0/ 0 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 5636495 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Causality operation skipped due to absence of debug database file
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of tb.sv was successful.
+# Compile of JAM.v failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+add wave -position insertpoint sim:/testfixture/u_JAM/*
+add wave -position insertpoint  \
+sim:/testfixture/u_JAM/buff
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    442698
+# receive MinCost/MatchCount=   0/15 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 4426975 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    442698
+# receive MinCost/MatchCount= 179/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 4426975 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    442698
+# receive MinCost/MatchCount=   0/15 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 4426975 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    442698
+# receive MinCost/MatchCount=   0/15 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 4426975 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    603970
+# receive MinCost/MatchCount=   x/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 6039695 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    603970
+# receive MinCost/MatchCount= 179/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 6039695 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+run
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:     49252
+# receive MinCost/MatchCount= 108/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 492515 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+run -all
+# cycle:    2097152, still running...
+# cycle:    4194304, still running...
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:     49252
+# receive MinCost/MatchCount= 108/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 492515 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:     49252
+# receive MinCost/MatchCount= 119/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 492515 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:     49252
+# receive MinCost/MatchCount= 140/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 492515 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+run -all
+# cycle:    2097152, still running...
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:     26020
+# receive MinCost/MatchCount=   0/ 8 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 260195 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:     49252
+# receive MinCost/MatchCount= 119/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 492515 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:     46348
+# receive MinCost/MatchCount= 108/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 463475 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:      2010
+# receive MinCost/MatchCount=   0/15 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 20095 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:     46348
+# receive MinCost/MatchCount= 108/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 463475 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v failed with 5 errors.
+# 2 compiles, 1 failed with 5 errors.
+# Compile of tb.sv was successful.
+# Compile of JAM.v failed with 4 errors.
+# 2 compiles, 1 failed with 4 errors.
+# Compile of tb.sv was successful.
+# Compile of JAM.v failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of tb.sv was successful.
+# Compile of JAM.v failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:      2010
+# receive MinCost/MatchCount=   0/15 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 20095 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+add wave -position insertpoint  \
+sim:/testfixture/u_JAM/cnt
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:      3410
+# receive MinCost/MatchCount= 111/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 34095 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:      3410
+# receive MinCost/MatchCount= 136/ 1 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION WRONG!!   **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 34095 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   1
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  11  25  53  41  59  32  25  59
+# worker1:   4  11  25  11  59  31  53  11
+# worker2:  11  59  15  11  15  15  53  53
+# worker3:   4  59  32  34  53  41  34  59
+# worker4:  15  32  41  34   4  59  34  32
+# worker5:  41  59  59   4   4  41  34  34
+# worker6:  53  31  25  41  59  32  31  53
+# worker7:  11  31  25  11  34  34  53  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    603970
+# receive MinCost/MatchCount= 119/ 3 , golden MinCost/MatchCount= 119/ 3
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION  CORRECT  **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 6039695 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   2
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  54  59  59  59  32  40  62  40
+# worker1:  54  32  32  79  32  38  32  62
+# worker2:  54  54  30  38  32  38  59  54
+# worker3:  30  59  32  32  62  40  45  79
+# worker4:  32  32  38  32  62  38  62  32
+# worker5:  79  45  32  62  32  32  32  59
+# worker6:  32  38  32  59  54  30  30  45
+# worker7:  30  79  32  32  62  30  45  32
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    603970
+# receive MinCost/MatchCount= 250/ 6 , golden MinCost/MatchCount= 250/ 6
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION  CORRECT  **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 6039695 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180
+# Compile of tb.sv was successful.
+# Compile of JAM.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading sv_std.std
+# Loading work.testfixture
+# Loading work.JAM
+# ** Warning: (vsim-3015) C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(34): [PCDPC] - Port size (10) does not match connection size (9) for port 'MinCost'. The port definition is at: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testfixture/u_JAM File: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/JAM.v
+run -all
+# *******************************
+# ** Simulation Start          **
+# *******************************
+# PATTERN:   3
+# -------------- Cost Table --------------
+# Jobs       0   1   2   3   4   5   6   7
+# worker0:  81  60  60  65  96  60  65  96
+# worker1:  96  60  66  96  60  60  60  81
+# worker2:  96  66  60  99  60  81  65  65
+# worker3:  66  96  80  99  81  81  96  60
+# worker4:  81  96  65  96  60  96  60  81
+# worker5:  60  96  80  96  80  60  81  60
+# worker6:  99  60  99  65  80  80  81  66
+# worker7:  65  60  60  99  99  80  60  96
+# ----------------------------------------------------------------------
+# Get Valid at cycle:    603970
+# receive MinCost/MatchCount= 485/ 9 , golden MinCost/MatchCount= 485/ 9
+# ----------------------------------------------------------------------
+# *************************
+# **  FUNCTION  CORRECT  **
+# *************************
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv(180)
+#    Time: 6039695 ns  Iteration: 1  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2022/2022/2022_univ_cell/tb.sv line 180

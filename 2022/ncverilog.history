@@ -1,0 +1,2 @@
+s1(11Mar2023:14:48:00):  ncverilog tb.sv JAM_syn.v -v tsmc13_neg.v +define+SDF 
+s2(11Mar2023:14:51:00):  ncverilog tb.sv JAM_syn.v -v tsmc13_neg.v +define+SDF 
