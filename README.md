@@ -1,2 +1,2 @@
 # iccontest
-IC 出賽考古題
+IC 初賽考古題
