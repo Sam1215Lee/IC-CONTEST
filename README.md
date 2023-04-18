@@ -1,2 +1,2 @@
 # iccontest
-IC 初賽考古題
+IC Contest E組初賽考古題
