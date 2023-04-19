@@ -6,8 +6,8 @@ IC Contest E組初賽考古題
 ## 2022
 - 派工機 JOB ASSIGNMENT MACHINE
 ### Performance
-`AREA:
-CYCLE:`
+`AREA:603952
+CYCLE:6686`
 
 ## 2023
 - 雷射電路 LASER TREATMENT
