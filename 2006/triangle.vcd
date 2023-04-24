@@ -1,0 +1,35 @@
+$date
+    Mar 24, 2023  16:10:38
+$end
+$version
+    TOOL:	ncsim	15.20-s039
+$end
+$timescale
+    10 ps
+$end
+
+$scope module test $end
+$var parameter 72 !    INPUT_DATA  $end
+$var parameter 80 "    EXPECT_DATA  $end
+$var parameter 32 #    period  $end
+
+$scope module top $end
+$var parameter  3 $    READ_1  $end
+$var parameter  3 %    READ_2  $end
+$var parameter  3 &    READ_3  $end
+$var parameter  3 '    WRITE  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b11 '
+b10 &
+b1 %
+b0 $
+b1111101000 #
+b1100101011110000111000001100101011000110111010000101110011001000110000101110100 "
+b11010010110111001110000011101010111010000101110011001000110000101110100 !
+$end
+#460000
