@@ -1,0 +1,45 @@
+$date
+    Mar 24, 2023  16:56:23
+$end
+$version
+    TOOL:	ncsim	15.20-s039
+$end
+$timescale
+    10 ps
+$end
+
+$scope module test $end
+$var parameter 32 !    IMAGE_N_PAT  $end
+$var parameter 32 "    CMD_N_PAT  $end
+$var parameter 32 #    OUT_LENGTH  $end
+$var parameter 32 $    t_reset  $end
+
+$scope module top $end
+$var parameter  1 %    WAIT  $end
+$var parameter  1 &    PROC  $end
+$var parameter  3 '    REFLASH  $end
+$var parameter  3 (    LOAD  $end
+$var parameter  3 )    RIGHT  $end
+$var parameter  3 *    LEFT  $end
+$var parameter  3 +    UP  $end
+$var parameter  3 ,    DOWN  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b101 ,
+b100 +
+b11 *
+b10 )
+b1 (
+b0 '
+1&
+0%
+b11001000 $
+b100001110 #
+b11110 "
+b100100 !
+$end
+#4740000

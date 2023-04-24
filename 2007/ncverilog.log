@@ -1,0 +1,50 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Mar 24, 2023 at 16:56:22 CST
+ncverilog
+	testfixture.v
+	lcd_ctrl_2007.v
+	+notimongchecks
+file: lcd_ctrl_2007.v
+	module worklib.lcd_ctrl:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.lcd_ctrl:v <0x46dde05a>
+			streams:  20, words:  7569
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               29      29
+		Scalar wires:             5       -
+		Vectored wires:           3       -
+		Always blocks:            6       6
+		Initial blocks:           7       7
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+*Verdi3* Loading libsscore_ius152.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,DVEXACC: some objects excluded from $dumpvars due to access restrictions, use +access+r on command line for access to all objects.
+            File: ./testfixture.v, line = 58, pos = 8
+           Scope: test
+            Time: 0 FS + 0
+
+---------------------------------------------
+
+All data have been generated successfully!
+
+-------------------PASS-------------------
+
+---------------------------------------------
+
+Simulation complete via $finish(1) at time 47400 NS + 0
+./testfixture.v:131       $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 24, 2023 at 16:56:23 CST  (total: 00:00:01)

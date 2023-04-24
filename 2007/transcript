@@ -1,0 +1,14 @@
+# Compile of testfixture.v was successful.
+# Compile of lcd_ctrl_2007.v was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim -gui +notimingchecks work.test
+# vsim -gui 
+# Start time: 21:24:19 on Mar 01,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.test
+# Loading work.lcd_ctrl
+add wave -position insertpoint sim:/test/top/*
+run -all
+# ** Error (suppressible): (vsim-3601) Iteration limit reached at time 550 ns.
+# 

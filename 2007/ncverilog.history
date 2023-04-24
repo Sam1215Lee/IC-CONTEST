@@ -1,0 +1,3 @@
+s1(24Mar2023:16:12:58):  ncverilog testfixture.v lcd_ctrl_2007.v +notimingchecks 
+s2(24Mar2023:16:19:34):  ncverilog testfixture.v lcd_ctrl_2007_syn.v -v tsmc13_neg.v +define+SDF 
+s3(24Mar2023:16:56:22):  ncverilog testfixture.v lcd_ctrl_2007.v +notimongchecks 

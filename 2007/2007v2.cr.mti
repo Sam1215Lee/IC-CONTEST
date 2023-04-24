@@ -1,0 +1,19 @@
+{C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2007/contest_file/testfixture.v} {1 {vlog -work work -novopt -stats=none {C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2007/contest_file/testfixture.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module test
+
+Top level modules:
+	test
+
+} {} {}} {C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2007/contest_file/lcd_ctrl_2007.v} {2 {vlog -work work -novopt -stats=none {C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2007/contest_file/lcd_ctrl_2007.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module lcd_ctrl
+** Warning: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2007/contest_file/lcd_ctrl_2007.v(128): (vlog-2182) 'cnt1' might be read before written in always_comb or always @* block.
+
+** Warning: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2007/contest_file/lcd_ctrl_2007.v(128): (vlog-2182) 'cnt2' might be read before written in always_comb or always @* block.
+
+
+Top level modules:
+	lcd_ctrl
+
+} {} {}}
