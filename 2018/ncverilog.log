@@ -1,0 +1,44 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Mar 24, 2023 at 17:15:20 CST
+ncverilog
+	testfixture.v
+	LCD_CTRL_syn.v
+	-v
+	tsmc13_neg.v
+	+define+tb1
+	+define+SDF
+file: testfixture.v
+`define SDFFILE  "./LCD_CTRL_syn.sdf"	// Modify your sdf file name
+|
+ncvlog: *E,EXPCPD (testfixture.v,5|0): expecting a valid compiler directive [16(IEEE)].
+`define tb1
+           |
+ncvlog: *W,MACNDF (testfixture.v,6|11): The text macro 'tb1' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+  `define EXPECT "./tb2_goal.dat"
+                                 |
+ncvlog: *W,MACRDF (testfixture.v,16|33): text macro 'EXPECT' redefined - replaced with new definition.
+  `define CMD "./cmd2.dat"
+                          |
+ncvlog: *W,MACRDF (testfixture.v,17|26): text macro 'CMD' redefined - replaced with new definition.
+  `define IMAGE "image2.dat"
+                            |
+ncvlog: *W,MACRDF (testfixture.v,18|28): text macro 'IMAGE' redefined - replaced with new definition.
+	module worklib.test:v
+		errors: 0, warnings: 0
+	module worklib.IROM:v
+		errors: 0, warnings: 0
+	module worklib.IRAM:v
+		errors: 0, warnings: 0
+file: LCD_CTRL_syn.v
+	module worklib.LCD_CTRL_DW01_add_3:v
+		errors: 0, warnings: 0
+	module worklib.LCD_CTRL_DW01_add_2:v
+		errors: 0, warnings: 0
+	module worklib.LCD_CTRL_DW01_add_1:v
+		errors: 0, warnings: 0
+	module worklib.LCD_CTRL:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 1, warnings: 4
+ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 24, 2023 at 17:15:20 CST  (total: 00:00:00)

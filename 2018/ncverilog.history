@@ -1,0 +1,6 @@
+s1(24Mar2023:17:11:02):  ncverilog testfixture.v LCD_CTRL.v +define+tb1 +notimingchecks 
+s2(24Mar2023:17:11:16):  ncverilog testfixture.v LCD_CTRL.v +define+tb2 +notimingchecks 
+s3(24Mar2023:17:11:38):  ncverilog testfixture.v LCD_CTRL.v +define+tb2 +notimingchecks 
+s4(24Mar2023:17:12:03):  ncverilog testfixture.v LCD_CTRL.v +define+tb3 +notimingchecks 
+s5(24Mar2023:17:13:39):  ncverilog testfixture.v LCD_CTRL.v +define+tb3 +notimingchecks 
+s6(24Mar2023:17:15:20):  ncverilog testfixture.v LCD_CTRL_syn.v -v tsmc13_neg.v +define+tb1 +define+SDF 

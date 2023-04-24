@@ -1,0 +1,24 @@
+{C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2018/spec/E_ICC2018_priliminary_univ_cell_based/E_ICC2018_priliminary_univ_cell/testfixture.v} {2 {vlog -work work -novopt -stats=none {C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2018/spec/E_ICC2018_priliminary_univ_cell_based/E_ICC2018_priliminary_univ_cell/testfixture.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module LCD_CTRL
+** Warning: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2018/spec/E_ICC2018_priliminary_univ_cell_based/E_ICC2018_priliminary_univ_cell/testfixture.v(16): (vlog-2263) Redefinition of macro: 'EXPECT' (previously defined near C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2018/spec/E_ICC2018_priliminary_univ_cell_based/E_ICC2018_priliminary_univ_cell/testfixture.v(10)) .
+
+** Warning: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2018/spec/E_ICC2018_priliminary_univ_cell_based/E_ICC2018_priliminary_univ_cell/testfixture.v(17): (vlog-2263) Redefinition of macro: 'CMD' (previously defined near C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2018/spec/E_ICC2018_priliminary_univ_cell_based/E_ICC2018_priliminary_univ_cell/testfixture.v(11)) .
+
+** Warning: C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2018/spec/E_ICC2018_priliminary_univ_cell_based/E_ICC2018_priliminary_univ_cell/testfixture.v(18): (vlog-2263) Redefinition of macro: 'IMAGE' (previously defined near C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2018/spec/E_ICC2018_priliminary_univ_cell_based/E_ICC2018_priliminary_univ_cell/testfixture.v(12)) .
+
+-- Compiling module test
+-- Compiling module IROM
+-- Compiling module IRAM
+
+Top level modules:
+	test
+
+} {} {}} {C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2018/spec/E_ICC2018_priliminary_univ_cell_based/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v} {1 {vlog -work work -novopt -stats=none {C:/Users/PCUSER/Desktop/DIC/IC contest/HISTORY/2018/spec/E_ICC2018_priliminary_univ_cell_based/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module LCD_CTRL
+
+Top level modules:
+	LCD_CTRL
+
+} {} {}}
