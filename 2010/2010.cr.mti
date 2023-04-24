@@ -1,0 +1,33 @@
+C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/S2.v {1 {vlog -work work -novopt -stats=none C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/S2.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module S2
+
+Top level modules:
+	S2
+
+} {} {}} C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/RB1.v {1 {vlog -work work -novopt -stats=none C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/RB1.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module RB1
+
+Top level modules:
+	RB1
+
+} {} {}} C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/RB2.v {1 {vlog -work work -novopt -stats=none C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/RB2.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module RB2
+
+Top level modules:
+	RB2
+
+} {} {}} C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v {1 {vlog -work work -novopt -stats=none C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module RB1
+-- Compiling module RB2
+-- Compiling module S1
+-- Compiling module S2
+-- Compiling module testfixture
+
+Top level modules:
+	testfixture
+
+} {} {}}

@@ -1,0 +1,93 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Mar 24, 2023 at 16:58:24 CST
+ncverilog
+	testfixture.v
+	S1.v
+	S2.v
+	+define+tb2
+	+notimingchecks
+file: testfixture.v
+  `define INFILE_RB1_in "tb2_RB1_in.dat"
+                                        |
+ncvlog: *W,MACRDF (testfixture.v,9|40): text macro 'INFILE_RB1_in' redefined - replaced with new definition.
+  `define INFILE_RB2 "tb2_RB2_goal.dat"
+                                       |
+ncvlog: *W,MACRDF (testfixture.v,10|39): text macro 'INFILE_RB2' redefined - replaced with new definition.
+	module worklib.RB1:v
+		errors: 0, warnings: 0
+	module worklib.RB2:v
+		errors: 0, warnings: 0
+	module worklib.testfixture:v
+		errors: 0, warnings: 0
+file: S1.v
+	module worklib.S1:v
+		errors: 0, warnings: 0
+file: S2.v
+	module worklib.S2:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+    $readmemh (`INFILE_RB1_in,m1.mem);
+                                   |
+ncelab: *W,MEMODR (./testfixture.v,102|35): $readmem default memory order incompatible with IEEE1364.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.RB1:v <0x603378dd>
+			streams:  16, words:  5690
+		worklib.RB2:v <0x4bffb142>
+			streams:  15, words:  4891
+		worklib.S1:v <0x76156141>
+			streams:  15, words:  5503
+		worklib.S2:v <0x1df9478f>
+			streams:  13, words:  4734
+		worklib.testfixture:v <0x62143686>
+			streams:   6, words: 15014
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 5       5
+		Primitives:             66       1
+		Timing outputs:          8       1
+		Registers:             135     135
+		Scalar wires:           26       -
+		Expanded wires:         60       6
+		Always blocks:           9       9
+		Initial blocks:          3       3
+		Cont. assignments:       3       6
+		Pseudo assignments:      1       1
+		Timing checks:         158       -
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.testfixture:v
+Loading snapshot worklib.testfixture:v .................... Done
+*Verdi3* Loading libsscore_ius152.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+
+
+
+
+        ****************************              
+        **                        **        /|__/|
+        **  Congratulations !!    **      / O,O  |
+        **                        **    /_____   |
+        **  Simulation Complete!! **   /^ ^ ^ \  |
+        **                        **  |^ ^ ^ ^ |w|
+        ****************************   \m___m__|_|
+
+
+------------------------------------------
+      RB2 check successfully!
+------------------------------------------
+
+------------------------------------------
+      upload frame check successfully!
+------------------------------------------
+
+Simulation complete via $finish(1) at time 19105 NS + 0
+./testfixture.v:228       #55 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Mar 24, 2023 at 16:58:24 CST  (total: 00:00:00)

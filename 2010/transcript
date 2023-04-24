@@ -1,0 +1,678 @@
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui +notimingchecks work.testfixture
+# vsim -gui 
+# Start time: 13:41:39 on Mar 18,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+add wave -position insertpoint sim:/testfixture/s1/*
+add wave -position insertpoint  \
+sim:/testfixture/s1/buff
+run -all
+# ERROR : The   0th frame = 000 010001001111011010 (expect = 000 100010011110110101)
+# ERROR : RB2[01] = 09bc9 (expect = 226f2)
+# ERROR : RB2[02] = 27b57 (expect = 227b5)
+# ERROR : RB2[03] = 0a5e6 (expect = 2d297)
+# ERROR : RB2[04] = 1e1a0 (expect = 305e1)
+# ERROR : RB2[05] = 2e323 (expect = 002b8)
+# ERROR : RB2[06] = 09fff (expect = 11c49)
+# ERROR : RB2[07] = xxxxx (expect = 1fbf0)
+# ------------------------------------------
+# There are    7 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    1 errors in during upload!
+# Upload frame check fail!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 20405 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+add wave -position insertpoint sim:/testfixture/s2/*
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run -all
+# ERROR : The   0th frame = 000 010001001111011010 (expect = 000 100010011110110101)
+# ERROR : RB2[01] = 09bc9 (expect = 226f2)
+# ERROR : RB2[02] = 27b57 (expect = 227b5)
+# ERROR : RB2[03] = 0a5e6 (expect = 2d297)
+# ERROR : RB2[04] = 1e1a0 (expect = 305e1)
+# ERROR : RB2[05] = 2e323 (expect = 002b8)
+# ERROR : RB2[06] = 09fff (expect = 11c49)
+# ERROR : RB2[07] = xxxxx (expect = 1fbf0)
+# ------------------------------------------
+# There are    7 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    1 errors in during upload!
+# Upload frame check fail!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 20405 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+run -all
+# ERROR : The   1th frame = 000 01000xxxx0010010xx (expect = 001 100010011011110010)
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v failed with 5 errors.
+# Compile of S2.v was successful.
+# Compile of testfixture.v failed with 5 errors.
+# 5 compiles, 2 failed with 10 errors.
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui +notimingchecks work.testfixture
+# vsim 
+# Start time: 13:50:06 on Mar 18,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+add wave -position insertpoint sim:/testfixture/s1/*
+run -all
+# ERROR : RB2[01] = 09bc9 (expect = 226f2)
+# ERROR : RB2[02] = 27b57 (expect = 227b5)
+# ERROR : RB2[03] = 0a5e6 (expect = 2d297)
+# ERROR : RB2[04] = 1e1a0 (expect = 305e1)
+# ERROR : RB2[05] = 2e323 (expect = 002b8)
+# ERROR : RB2[06] = 09fff (expect = 11c49)
+# ERROR : RB2[07] = xxxxx (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    7 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 20405 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+add wave -position insertpoint sim:/testfixture/s2/*
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run -all
+# ERROR : RB2[01] = 09bc9 (expect = 226f2)
+# ERROR : RB2[02] = 27b57 (expect = 227b5)
+# ERROR : RB2[03] = 0a5e6 (expect = 2d297)
+# ERROR : RB2[04] = 1e1a0 (expect = 305e1)
+# ERROR : RB2[05] = 2e323 (expect = 002b8)
+# ERROR : RB2[06] = 09fff (expect = 11c49)
+# ERROR : RB2[07] = xxxxx (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    7 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 20405 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+# Causality operation skipped due to absence of debug database file
+add wave -position insertpoint  \
+sim:/testfixture/s1/buff
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run -all
+# ERROR : RB2[01] = 09bc9 (expect = 226f2)
+# ERROR : RB2[02] = 27b57 (expect = 227b5)
+# ERROR : RB2[03] = 0a5e6 (expect = 2d297)
+# ERROR : RB2[04] = 1e1a0 (expect = 305e1)
+# ERROR : RB2[05] = 2e323 (expect = 002b8)
+# ERROR : RB2[06] = 09fff (expect = 11c49)
+# ERROR : RB2[07] = xxxxx (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    7 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 20405 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+add wave -position insertpoint sim:/testfixture/s2/*
+add wave -position insertpoint  \
+sim:/testfixture/s1/buff
+run -all
+# ERROR : The   1th frame = 000 10001xxxx0010010xx (expect = 001 100010011011110010)
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/testfixture/s1/buff
+add wave -position insertpoint sim:/testfixture/s2/*
+run -all
+# ERROR : RB2[01] = 09bc9 (expect = 226f2)
+# ERROR : RB2[02] = 27b57 (expect = 227b5)
+# ERROR : RB2[03] = 0a5e6 (expect = 2d297)
+# ERROR : RB2[04] = 1e1a0 (expect = 305e1)
+# ERROR : RB2[05] = 2e323 (expect = 002b8)
+# ERROR : RB2[06] = 09fff (expect = 11c49)
+# ERROR : RB2[07] = xxxxx (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    7 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 20405 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+run -all
+# ERROR : RB2[00] = 04f6a (expect = 227b5)
+# ERROR : RB2[01] = 13792 (expect = 226f2)
+# ERROR : RB2[02] = 0f6ae (expect = 227b5)
+# ERROR : RB2[03] = 14bcc (expect = 2d297)
+# ERROR : RB2[04] = 3c340 (expect = 305e1)
+# ERROR : RB2[05] = 1c647 (expect = 002b8)
+# ERROR : RB2[06] = 13fff (expect = 11c49)
+# ERROR : RB2[07] = xxxxx (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    8 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 20505 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v failed with 1 errors.
+# Compile of testfixture.v failed with 1 errors.
+# 5 compiles, 2 failed with 2 errors.
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v failed with 1 errors.
+# Compile of testfixture.v failed with 1 errors.
+# 5 compiles, 2 failed with 2 errors.
+run -all
+# ERROR : The   1th frame = 000 10001xxx0010010xxx (expect = 001 100010011011110010)
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v failed with 3 errors.
+# Compile of testfixture.v failed with 4 errors.
+# 5 compiles, 2 failed with 7 errors.
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v failed with 3 errors.
+# Compile of testfixture.v failed with 4 errors.
+# 5 compiles, 2 failed with 7 errors.
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v failed with 3 errors.
+# Compile of testfixture.v failed with 4 errors.
+# 5 compiles, 2 failed with 7 errors.
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+# Warning in wave window restart: (vish-4014) No objects found matching '/testfixture/s2/acnt'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/testfixture/s2/addreg'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/testfixture/s2/state'. 
+run -all
+# ERROR : RB2[03] = 3fffc (expect = 2d297)
+# ERROR : RB2[07] = 2d297 (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    2 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 19205 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+add wave -position insertpoint sim:/testfixture/s1/*
+add wave -position insertpoint sim:/testfixture/s2/*
+add wave -position insertpoint  \
+sim:/testfixture/s1/buff
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run -all
+# ERROR : RB2[03] = 3fffc (expect = 2d297)
+# ERROR : RB2[07] = 2d297 (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    2 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 19205 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+run -all
+# ERROR : The   1th frame = 000 1000101xxxxxxxxxxx (expect = 001 100010011011110010)
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+add wave -position insertpoint sim:/testfixture/s2/*
+add wave -position insertpoint  \
+sim:/testfixture/s1/sd
+run -all
+# ERROR : RB2[03] = 3fffc (expect = 2d297)
+# ERROR : RB2[07] = 2d297 (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    2 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 19205 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+run -all
+# ERROR : RB2[07] = 3fffc (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    1 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 19105 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+add wave -position insertpoint  \
+sim:/testfixture/s1/buff
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+add wave -position insertpoint sim:/testfixture/s2/*
+run -all
+# ERROR : RB2[07] = 3fffc (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    1 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 19105 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+add wave -position insertpoint sim:/testfixture/s1/*
+run -all
+# ERROR : RB2[07] = 3fffc (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    1 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 19105 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+run -all
+# ERROR : The   1th frame = 000 10001101xxxxxxxxxx (expect = 001 100010011011110010)
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+run -all
+# ERROR : RB2[07] = 3ffff (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    1 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 19105 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+run -all
+# ERROR : RB2[07] = 3ffff (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    1 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 19105 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+add wave -position insertpoint sim:/testfixture/s1/*
+add wave -position insertpoint  \
+sim:/testfixture/s1/buff
+add wave -position insertpoint sim:/testfixture/s2/*
+run -all
+# ERROR : RB2[07] = 3ffff (expect = 1fbf0)
+# ------------------------------------------
+#      S1 function check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+# There are    1 errors in RB2!
+#       RB2 check fail!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 19105 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228
+# Compile of RB1.v was successful.
+# Compile of RB2.v was successful.
+# Compile of S1.v was successful.
+# Compile of S2.v was successful.
+# Compile of testfixture.v was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.testfixture
+# Loading work.S1
+# Loading work.S2
+# Loading work.RB1
+# Loading work.RB2
+run -all
+# 
+# 
+# 
+# 
+#         ****************************              
+#         **                        **        /|__/|
+#         **  Congratulations !!    **      / O,O  |
+#         **                        **    /_____   |
+#         **  Simulation Complete!! **   /^ ^ ^ \  |
+#         **                        **  |^ ^ ^ ^ |w|
+#         ****************************   \m___m__|_|
+# 
+# 
+# ------------------------------------------
+#       RB2 check successfully!
+# ------------------------------------------
+# 
+# ------------------------------------------
+#       upload frame check successfully!
+# ------------------------------------------
+# 
+# ** Note: $finish    : C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v(228)
+#    Time: 19105 ns  Iteration: 0  Instance: /testfixture
+# 1
+# Break in Module testfixture at C:/Users/PCUSER/Downloads/D_ICC2010_priliminary_univ_cell/2010ucb/testfixture.v line 228

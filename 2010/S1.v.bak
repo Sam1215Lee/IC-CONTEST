@@ -1,0 +1,130 @@
+module S1(clk,
+	  rst,
+	  RB1_RW,
+	  RB1_A,
+	  RB1_D,
+	  RB1_Q,
+	  sen,
+	  sd);
+
+  input clk,
+        rst;
+
+  output reg RB1_RW;
+  
+  output reg[4:0] RB1_A;
+  
+  output reg[7:0] RB1_D;
+  
+  input [7:0] RB1_Q;
+  
+  output reg sen,
+        sd;
+
+reg [7:0] buff[0:17];  
+reg [4:0] cnt; // counter
+reg [3:0] pcnt;
+reg [2:0] icnt; //package address counter
+reg [1:0] acnt; //address counter
+reg [1:0] cur, next;
+reg state;
+
+parameter read = 2'd0;
+parameter pass = 2'd1;
+parameter byebye = 2'd2;
+
+parameter addr = 1'd0;
+parameter data = 1'd1;
+
+always @(*)begin
+      case(cur)
+      read:
+      begin
+            if(cnt == 5'd17)next = pass;
+            else next = read;
+      end
+      pass:
+      begin
+            if(pcnt == 4'd8)next = byebye;
+            else next = pass;
+      end
+      byebye:
+      begin
+	    next = byebye;
+      end
+      default:
+      begin
+	    next = byebye;
+      end
+      endcase
+end
+
+always @(negedge clk or posedge rst) begin
+      if(rst)
+      begin
+            cur <= read;
+            cnt <= 5'd0;
+            RB1_RW <= 1;
+            sen <= 1;
+            RB1_A <= 0;
+            RB1_D <= 0;
+            sd <= 0;
+            state <= addr;
+            icnt <= 3'd7;
+      end 
+      else
+      begin
+            cur <= next;
+            case(cur)
+            read:
+            begin
+                  buff[cnt] <= RB1_Q;
+                  if(cnt<5'd17) 
+                  begin
+                      cnt <= cnt+5'd1;
+                  end
+                  else 
+                  begin
+                        icnt <= 3'd7;
+                        pcnt <= 3'd0; 
+                        acnt <= 2'd2;
+			//sen <= 0;
+                  end
+                  RB1_A <= RB1_A + 1;
+            end
+            pass:
+            begin
+                  sen <= 0;
+                  case(state)
+                  addr:
+                  begin
+                        if(acnt>0)acnt <= acnt-2'd1;
+                        else
+                        begin
+                              cnt <= 5'd17;
+                              state <= data;
+                        end
+                        sd <= pcnt[acnt];
+                  end
+                  data:
+                  begin
+                        if(cnt > 0)cnt <= cnt - 5'd1;
+                        else
+                        begin
+                              
+                              pcnt <= pcnt+1;
+                              icnt <= icnt-1;
+                              acnt <= 2'd2;
+                              state <= addr;
+                        end
+                        sd <= buff[cnt][icnt];
+                  end
+                  endcase
+            end	
+            endcase
+      end
+end
+
+
+
+endmodule
