@@ -1,0 +1,6 @@
+s1(24Mar2023:16:23:03):  ncverilog tb.v lcd_ctrl_syn.v -v tsmc13_neg.v +define+SDF 
+s2(24Mar2023:16:23:42):  ncverilog tb.v lcd_ctrl.v +notimingchecks 
+s3(24Mar2023:16:53:44):  ncverilog tb.v lcd_ctrl.v +notimingchecks 
+s4(24Mar2023:16:54:17):  ncverilog tb.v lcd_ctrl.v +notimingchecks 
+s5(24Mar2023:16:54:22):  ncverilog tb.v lcd_ctrl.v +notimingchecks 
+s6(24Mar2023:16:54:27):  ncverilog tb.v lcd_ctrl.v +notimingchecks 
