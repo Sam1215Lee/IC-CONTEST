@@ -12,4 +12,8 @@ IC Contest E組初賽考古題
 
 ## 2023
 - 雷射電路 LASER TREATMENT
+   ### Performance
+   `AREA:172443
+    CYCLE:22633.131907
+    Level:A`
 
