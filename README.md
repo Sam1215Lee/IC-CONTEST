@@ -26,4 +26,5 @@ IC Contest E組初賽考古題
     ![Alt Text](https://github.com/Sam1215Lee/IC-CONTEST/blob/main/2023/Result/image%20(2).png)
     
     3. Report_area
+    
     ![Alt Text](https://github.com/Sam1215Lee/IC-CONTEST/blob/main/2023/Result/image%20(3).png)
