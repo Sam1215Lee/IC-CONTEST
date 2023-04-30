@@ -16,4 +16,5 @@ IC Contest E組初賽考古題
    `AREA:172443
     CYCLE:22633.131907
     Level:A`
-
+    ![Alt Text](https://github.com/Sam1215Lee/IC-CONTEST/blob/main/2023/Result/image%20(1).png)
+    
